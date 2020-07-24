@@ -1,0 +1,295 @@
+/* css variables */
+@import url(./partials/_variables.css);
+
+/* global */
+@import url(./partials/_global.css);
+
+/* start navigation */
+
+.header_area .main-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* end navigation */
+
+/* Banner Area  */
+
+.site-banner .site-banner .banner-title{
+    color: white;
+}
+.site-banner .container{
+    display: flex;
+    justify-content: center; 
+    padding: 15rem;
+}
+.site-main .site-banner{
+    background-image: url('../img/banner_background.jpg');
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+}
+/* .site-main .site-banner .site-title {
+    padding: 25%;
+    width: 50%;
+    font-weight: 500;
+} */
+
+/* .site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+} */
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+/* .site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 30rem;
+} */
+
+
+
+/* End Banner Area  */
+
+/* Start About Area  */
+
+
+.site-main .about-area{
+    display: flex;
+    justify-content: center; 
+    padding: 10rem;
+
+}
+
+/* .site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+    letter-spacing: 21px;
+} */
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+/* End About Area  */
+
+
+
+/* Start Brand area  */
+/* .site-main .brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;   
+} */
+
+
+
+/* .site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
+    width: 50%;
+
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover >img{
+    filter: brightness(0.15);
+} */
+
+
+/* Resume Area */
+.site-main .resume-area{
+  display: flex;
+  justify-content: center; 
+  padding: 5rem;
+  background-color:  #f8fafd;
+
+}
+.timeline {
+    border-left: 2px solid #e0e0e0;
+    padding: 15px 0;
+    margin-right: 50px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding: 15px 20px 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-left: 2px solid var(--primary-color);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+  }
+  
+  .timeline-item:hover {
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+  }
+  
+
+  
+  .timeline-item:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    left: -29px;
+    border: 2px solid var(--primary-color);
+    z-index: 2;
+  }
+  
+  .timeline-item:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    width: 29px;
+    height: 2px;
+    top: 25px;
+    left: -29px;
+    z-index: 1;
+  }
+  
+  .timeline-item .item-title {
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+  
+  .timeline-item .item-period {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.2em;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+  }
+  
+  .timeline-item .item-small {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.2em;
+    color: #9e9e9e;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    padding-left: 8px;
+    border-left: 1px solid #e0e0e0;
+  }
+/* End Resume Area  */
+
+
+/* Tech Area  */
+
+.site-main .tech-area{
+  min-height: 50vmin;
+}
+.site-main .tech-area .row{
+    display: flex;
+    justify-content: center;
+}
+.site-main .tech-area > h2{
+  font-family: "Raleway",sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #343a40;
+  padding: 10vmin 0;
+  text-align: center;
+}
+
+.site-main .tech-area .tech-logo{
+  height: 130px;
+    width: auto;
+    margin: 30px;
+    text-align: center;
+}
+.site-main .tech-area .tech-logo > img{
+  height: 60%;
+    width: auto;
+}
+
+
+
+/* End Tech Area  */
+
+.site-main .project-area{
+
+  background-color:  #f8fafd;
+  height: 50rem;
+
+}
+.site-main .project-area > h2{
+  font-family: var(--roboto);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #343a40;
+  padding: 10vmin 0;
+  text-align: center;
+}
+.site-main .tech-area .row{
+  display: flex;
+  justify-content: center;
+}
+
+.site-main .project-area .card{
+  position: relative;
+  height: auto;
+    width: 50px;
+    margin: 30px;
+    text-align: center;
+}
+
+footer{
+  background-image: url('../img/banner_background.jpg');
+  height: 50vh;
+  background-attachment: fixed;
+}
